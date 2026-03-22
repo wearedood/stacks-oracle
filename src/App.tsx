@@ -127,17 +127,8 @@ export default function App() {
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr 1fr', flex: 1, borderTop: `2px solid ${C.green}` }}>
 
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <div style={{ ...cell(C.gold), flex: 1, minHeight: 220 }}>
-            <svg viewBox="0 0 100 100" width="90" height="90">
-              <circle cx="50" cy="50" r="20" fill="none" stroke={C.green} strokeWidth="2"/>
-              {[0,45,90,135,180,225,270,315].map(a => (
-                <line key={a} x1={50+26*Math.cos(a*Math.PI/180)} y1={50+26*Math.sin(a*Math.PI/180)} x2={50+40*Math.cos(a*Math.PI/180)} y2={50+40*Math.sin(a*Math.PI/180)} stroke={C.green} strokeWidth="2" strokeLinecap="round"/>
-              ))}
-              {[22,67,112,157,202,247,292,337].map(a => (
-                <line key={a} x1={50+26*Math.cos(a*Math.PI/180)} y1={50+26*Math.sin(a*Math.PI/180)} x2={50+34*Math.cos(a*Math.PI/180)} y2={50+34*Math.sin(a*Math.PI/180)} stroke={C.green} strokeWidth="1.5" strokeLinecap="round"/>
-              ))}
-            </svg>
-            <div style={{ ...font.body, fontSize: 12, letterSpacing: 3, color: C.green, marginTop: 12, opacity: 0.6 }}>YOUR FATE AWAITS</div>
+          <div style={{ background: '#F1EFE2', border: `1px solid ${C.green}`, flex: 1, minHeight: 220, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16 }}>
+            <img src="/Logo.png" alt="The Stacks Oracle" style={{ width: '85%', maxWidth: 180, objectFit: 'contain' }} />
           </div>
           <div style={{ ...cell(C.orange), flex: 1, minHeight: 220 }}>
             <div style={{ ...font.title, fontSize: 20, color: C.cream, textAlign: 'center', lineHeight: 1.3, marginBottom: 8 }}>
@@ -171,7 +162,7 @@ export default function App() {
                 SAVE CARD
               </button>
               <div style={{ background: '#F1EFE2', borderRadius: 12, padding: '8px 16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <img src="https://wearedood.github.io/stacks-oracle/logo.png" alt="The Stacks Oracle" style={{ width: 60, height: 60, objectFit: 'contain' }} />
+                <img src="/Logo.png" alt="The Stacks Oracle" style={{ width: 60, height: 60, objectFit: 'contain' }} />
               </div>
             </div>
           )}
