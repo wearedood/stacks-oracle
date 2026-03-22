@@ -166,9 +166,14 @@ export default function App() {
           {txId && <a href={`https://explorer.hiro.so/txid/${txId}?chain=mainnet`} target="_blank" rel="noreferrer" style={{ ...font.body, fontSize: 12, letterSpacing: 2, color: C.green, opacity: 0.4, marginBottom: 8, textDecoration: 'none' }}>RECORDED ON-CHAIN ✦</a>}
 
           {state === 'revealed' && (
-            <button onClick={saveCard} style={{ ...font.body, fontSize: 13, letterSpacing: 2, color: C.green, background: 'transparent', border: `1px solid ${C.green}`, borderRadius: 20, padding: '6px 18px', cursor: 'pointer', marginBottom: 60, opacity: 0.7 }}>
-              SAVE CARD
-            </button>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, marginBottom: 60 }}>
+              <button onClick={saveCard} style={{ ...font.body, fontSize: 13, letterSpacing: 2, color: C.green, background: 'transparent', border: `1px solid ${C.green}`, borderRadius: 20, padding: '6px 18px', cursor: 'pointer', opacity: 0.7 }}>
+                SAVE CARD
+              </button>
+              <div style={{ background: '#F1EFE2', borderRadius: 12, padding: '8px 16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <img src="https://wearedood.github.io/stacks-oracle/logo.png" alt="The Stacks Oracle" style={{ width: 60, height: 60, objectFit: 'contain' }} />
+              </div>
+            </div>
           )}
 
           <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: C.orange, padding: '14px 0', textAlign: 'center', borderTop: `2px solid ${C.green}` }}>
