@@ -102,13 +102,13 @@ export default function App() {
 
   const shareX = () => {
     if (!card) return;
-    const text = `🔮 I just drew ${card.name} from The Stacks Oracle!\n\n"${card.meaning}"\n\nBuilt this on-chain tarot app for the @Stacks Builder Rewards challenge on @talentprotocol — every reading is recorded on the Stacks blockchain forever.\n\nBuilt by @ddtrvlr\n\nTry it yourself 👇\nhttps://wearedood.github.io/stacks-oracle\n\n#StacksOracle #BuildOnStacks`;
+    const text = `🔮 Drew ${card.name} from The Stacks Oracle!\n\n"${card.meaning}"\n\nOn-chain tarot on @Stacks — every reading recorded on the blockchain forever.\n\nBy @ddtrvlr 👇\nwearedood.github.io/stacks-oracle\n\n#StacksOracle #BuildOnStacks`;
     window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const shareFarcaster = () => {
     if (!card) return;
-    const text = `🔮 I just drew ${card.name} from The Stacks Oracle!\n\n"${card.meaning}"\n\nBuilt this on-chain tarot app for the @stacks Builder Rewards challenge on @talentprotocol — every reading is recorded on the Stacks blockchain forever.\n\nBuilt by @ddtrvlr — cc @jesse.base.eth\n\nTry it yourself 👇\nwearedood.github.io/stacks-oracle\n\nLiking it @jesse.base.eth?\n\n#StacksOracle #BuildOnStacks`;
+    const text = `🔮 I just drew ${card.name} from The Stacks Oracle!\n\n"${card.meaning}"\n\nBuilt this on-chain tarot app for the @stacks Builder Rewards challenge on @talentprotocol — every reading is recorded on the Stacks blockchain forever.\n\nBuilt by @ddtrvlr — cc @jesse.base.eth\n\nTry it yourself 👇\nwearedood.github.io/stacks-oracle\n\n#StacksOracle #BuildOnStacks`;
     window.open(`https://warpcast.com/~/compose?text=${encodeURIComponent(text)}`, '_blank');
   };
 
